@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #3e8df4;
+    --secondary-color: #235cd9;
+    --tertiary-color: #6586e6;
+    --fourth-color: #223d8f;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(15,45,138);
+    background: linear-gradient(180deg, rgba(15,45,138,1) 0%, rgba(35,92,217,1) 56%);
+}
+
+.container-form{
+    width: 150vh;
+    height: 85vh;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+#acessos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+    padding-bottom: 1vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: var(--secondary-color);
+}
+
+#acessos{
+    .login-button {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #ffffff;
+    }
+}
+
+#acessos{
+    .divider {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0px 5px;
+        color: #ffffff;
+    }
+}
+
