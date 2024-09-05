@@ -5,6 +5,17 @@
     padding: 0;
 }
 
+/* Esconde todos os formulários por padrão */
+.formulario {
+    display: none;
+}
+
+/* Mostra o formulário ativo */
+.formulario.ativo {
+    display: block;
+}
+
+
 :root{
     --primary-color: #3e8df4;
     --secondary-color: #235cd9;

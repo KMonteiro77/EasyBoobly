@@ -18,24 +18,53 @@
                             <img src="assets/images/full-white-logo.png" alt="logo-EasyBoobly" width="230px" height="auto">
                         </div>
                         <div id="logins">
-                            <a href="#" class="login-button" aria-label="Entrar na sua conta">Cadastrar</a>
+                            <button onclick="formCadastro(event)">teste</button>
+                            <a href="#" class="login-button" aria-label="Entrar na sua conta" onclick="formCadastro(event)">Cadastrar</a>
                             <span class="divider">/</span>
-                            <a href="#" class="login-button" aria-label="Cadastrar uma nova conta">Entrar</a>
+                            <a href="#" class="login-button" aria-label="Cadastrar uma nova conta" onclick="formLogin(event)">Entrar</a>
                         </div>
                     </div>
                 </header>
                 <main>
                     <section id="section-form">
-                        <form action="">
+
+                        <!-- Formulário de Login -->
+                        <form id="form-login" class="formulario">
                             <div id="item-forms">
                                 <div id="text-form"> 
                                     <label for="user" id="label-user">Usuário ou E-mail</label>
                                     <input type="text" name="user" class="input-user-login usuario" placeholder="Digite o nome de usuário">
                                     <label for="password" id="label-senha">Senha</label>
                                     <input type="text" name="user" class="input-user-login senha" placeholder="Digite sua senha">
-                                    <a href="#" id="esqueceu-senha">Esqueci minha senha</a>
+                                    <a href="#" id="esqueceu-senha" onclick="formRecpSenha(event)">Esqueci minha senha</a>
                                 </div>
                                 <button type="submit" class="custom-btn btn-3"><span>Acessar</span></button>
+                            </div>
+                        </form>
+
+                        <!-- Formulário de Cadastro -->
+                        <form id="form-cadastro" class="formulario">
+                            <div id="item-forms">
+                                <div id="text-form">
+                                    <label for="username" id="label-username">Nome de usuário</label>
+                                    <input type="text" name="username" class="input-user-login" placeholder="Crie um nome de usuário">
+                                    <label for="email" id="label-email">E-mail</label>
+                                    <input type="email" name="email" class="input-user-login" placeholder="Digite seu e-mail">
+                                    <label for="password-cadastro" id="label-password-cadastro">Senha</label>
+                                    <input type="password" name="password-cadastro" class="input-user-login" placeholder="Crie uma senha">
+                                </div>
+                                <button type="submit" class="custom-btn btn-3"><span>Cadastrar</span></button>
+                            </div>
+                        </form>
+
+                        <!-- Formulário de Recuperação de Senha -->
+                        <form id="form-recuperacao" class="formulario">
+                            <div id="item-forms">
+                                <div id="text-form">
+                                    <label for="email-recuperacao" id="label-email-recuperacao">E-mail para recuperação</label>
+                                    <input type="email" name="email-recuperacao" class="input-user-login" placeholder="Digite seu e-mail">
+                                </div>
+                                <button type="submit" class="custom-btn btn-3"><span>Recuperar Senha</span></button>
                             </div>
                         </form>
                     </section>
