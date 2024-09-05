@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/icon.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>EasyBoobly</title>
@@ -24,11 +25,17 @@
                     </div>
                 </header>
                 <main>
-                    <section>
+                    <section id="section-form">
                         <form action="">
-                            <div>
-                                <label for="input-user-login">Seu e-mail ou Nome de usuário</label>
-                                <input type="text" name="user" id="input-user-login">
+                            <div id="item-forms">
+                                <div id="text-form"> 
+                                    <label for="user" id="label-user">Usuário ou E-mail</label>
+                                    <input type="text" name="user" class="input-user-login usuario" placeholder="Digite o nome de usuário">
+                                    <label for="password" id="label-senha">Senha</label>
+                                    <input type="text" name="user" class="input-user-login senha" placeholder="Digite sua senha">
+                                    <a href="#" id="esqueceu-senha">Esqueci minha senha</a>
+                                </div>
+                                <button type="submit" class="custom-btn btn-3"><span>Acessar</span></button>
                             </div>
                         </form>
                     </section>
