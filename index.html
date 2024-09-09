@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/icon.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>EasyBoobly</title>
 </head>
 <body>
@@ -18,25 +18,25 @@
                             <img src="assets/images/full-white-logo.png" alt="logo-EasyBoobly" width="230px" height="auto">
                         </div>
                         <div id="logins">
-                            <button onclick="formCadastro(event)">teste</button>
-                            <a href="#" class="login-button" aria-label="Entrar na sua conta" onclick="formCadastro(event)">Cadastrar</a>
+                            <a href="#" id="btn-cadastrar" class="login-button">Cadastrar</a>
                             <span class="divider">/</span>
-                            <a href="#" class="login-button" aria-label="Cadastrar uma nova conta" onclick="formLogin(event)">Entrar</a>
+                            <a href="#" id="btn-entrar" class="login-button">Entrar</a>
                         </div>
                     </div>
                 </header>
+
                 <main>
                     <section id="section-form">
 
                         <!-- Formulário de Login -->
-                        <form id="form-login" class="formulario">
+                        <form id="form-login" class="formulario ativo">
                             <div id="item-forms">
                                 <div id="text-form"> 
                                     <label for="user" id="label-user">Usuário ou E-mail</label>
                                     <input type="text" name="user" class="input-user-login usuario" placeholder="Digite o nome de usuário">
                                     <label for="password" id="label-senha">Senha</label>
-                                    <input type="text" name="user" class="input-user-login senha" placeholder="Digite sua senha">
-                                    <a href="#" id="esqueceu-senha" onclick="formRecpSenha(event)">Esqueci minha senha</a>
+                                    <input type="password" name="password" class="input-user-login senha" placeholder="Digite sua senha">
+                                    <a href="#" id="esqueceu-senha">Esqueci minha senha</a>
                                 </div>
                                 <button type="submit" class="custom-btn btn-3"><span>Acessar</span></button>
                             </div>
@@ -48,9 +48,9 @@
                                 <div id="text-form">
                                     <label for="username" id="label-username">Nome de usuário</label>
                                     <input type="text" name="username" class="input-user-login" placeholder="Crie um nome de usuário">
-                                    <label for="email" id="label-email">E-mail</label>
+                                    <label for="email" class="label-form-cadastro" id="label-email">E-mail</label>
                                     <input type="email" name="email" class="input-user-login" placeholder="Digite seu e-mail">
-                                    <label for="password-cadastro" id="label-password-cadastro">Senha</label>
+                                    <label for="password-cadastro" class="label-form-cadastro" id="label-password-cadastro">Senha</label>
                                     <input type="password" name="password-cadastro" class="input-user-login" placeholder="Crie uma senha">
                                 </div>
                                 <button type="submit" class="custom-btn btn-3"><span>Cadastrar</span></button>

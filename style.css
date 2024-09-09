@@ -109,11 +109,12 @@ body{
 }
 
 #label-senha { 
-    margin-bottom: 1vh;
     font-family: var(--primary-font);
     font-size: var(--size-font);
     font-weight: var(--font-weight-700);
+    margin-bottom: 1vh;
     margin-left: -37vh;
+    
 }
 
 .input-user-login{
@@ -143,6 +144,7 @@ input{
 .input-user-login::placeholder {
     font-family: var(--primary-font);
     font-weight: var(--font-weight-600)
+
 }
 
 #esqueceu-senha{
@@ -154,6 +156,40 @@ input{
     font-family: var(--primary-font);
     font-weight: var(--font-weight-500);
     font-size: 13.5px;
+
+}
+
+#label-email-recuperacao{
+  font-family: var(--primary-font);
+  font-size: var(--size-font);
+  font-weight: var(--font-weight-700);
+  margin-bottom: 1vh;
+
+}
+
+.input-user-login{
+  font-family: var(--primary-font);
+  font-size: var(--size-font);
+  font-weight: var(--font-weight-700);
+  margin-bottom: 1vh;
+
+}
+
+#label-username{
+  font-family: var(--primary-font);
+  font-size: var(--size-font);
+  font-weight: var(--font-weight-700);
+  margin-left: -23vh;
+  margin-bottom: 1vh;
+
+}
+
+.label-form-cadastro{
+  font-family: var(--primary-font);
+  font-size: var(--size-font);
+  font-weight: var(--font-weight-700);
+  margin-left: -35vh;
+  margin-bottom: 1vh;
 }
 
 /* Css Somente da personalização do botão e o hover */
