@@ -105,6 +105,7 @@ body{
     font-family: var(--primary-font);
     font-size: var(--size-font);
     font-weight: var(--font-weight-700);
+<<<<<<< HEAD
     margin-left: -34vh;
 }
 
@@ -114,6 +115,9 @@ body{
     font-size: var(--size-font);
     font-weight: var(--font-weight-700);
     margin-left: -35vh;
+=======
+    margin-left: -24vh;
+>>>>>>> e8ee08a6823928e1b0c2d48ae2d0078fc7b707f5
 }
 
 #label-senha { 

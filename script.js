@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
         formLogin.classList.remove('ativo');
         formCadastro.classList.remove('ativo');
     });
+<<<<<<< HEAD
+=======
+
+    // Exemplo de botão para adicionar uma classe
+    botaoTeste.addEventListener('click', function() {
+        formCadastro.classList.toggle('ativo');
+    });
+>>>>>>> e8ee08a6823928e1b0c2d48ae2d0078fc7b707f5
 });
 
 // Validação básica do formulário de cadastro
@@ -49,6 +57,7 @@ document.querySelector("form").addEventListener("submit", function(event) {
         event.preventDefault();
     }
 });
+<<<<<<< HEAD
 
 // Função de campos requeridos
 
@@ -63,3 +72,5 @@ function VerificaRequeridos(event){
     }
 
 }
+=======
+>>>>>>> e8ee08a6823928e1b0c2d48ae2d0078fc7b707f5
