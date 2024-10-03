@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
     <script src="script.js" defer></script>
     <title>EasyBoobly</title>
 </head>
-<body>
+<body id="body-login">
     <div class="container">
         <div class="container-form">
             <div class="form">

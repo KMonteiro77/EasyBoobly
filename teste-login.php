@@ -26,7 +26,7 @@ if(isset($_POST['submit']) && !empty($_POST['user-login']) && !empty($_POST['pas
     } else{
         $_SESSION['user'] = $user;
         $_SESSION['senha'] = $senha;
-        header('Location: home.php');
+        header('Location: system.php');
     }
 
 } else {

@@ -30,6 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
         formLogin.classList.remove('ativo');
         formCadastro.classList.remove('ativo');
     });
+
+    // Exemplo de botão para adicionar uma classe
+    botaoTeste.addEventListener('click', function() {
+        formCadastro.classList.toggle('ativo');
+    });
 });
 
 // Validação básica do formulário de cadastro
