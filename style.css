@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Esconde todos os formulários por padrão */
+.formulario {
+    display: none;
+}
+
+/* Mostra o formulário ativo */
+.formulario.ativo {
+    display: block;
+}
+
+
+:root{
+    --primary-color: #3e8df4;
+    --secondary-color: #235cd9;
+    --tertiary-color: #6586e6;
+    --fourth-color: #223d8f;
+    --primary-font: "Poppins", sans-serif;
+    --size-font: 15px;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(15,45,138);
+    background: linear-gradient(180deg, rgba(15,45,138,1) 0%, rgba(35,92,217,1) 56%);
+}
+
+.container-form{
+    width: 110vh;
+    height: 85vh;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+#acessos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+    padding-bottom: 1vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: var(--secondary-color);
+}
+
+#acessos{
+    .login-button {
+        font-family: "Poppins", sans-serif;
+        font-weight: var(--font-weight-400);
+        font-style: normal;
+        color: #ffffff;
+    }
+}
+
+#acessos{
+    .divider {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0px 5px;
+        color: #ffffff;
+    }
+}
+
+#text-form{
+    width: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#section-form{
+    #item-forms{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#label-user{ 
+    margin-bottom: 1vh;
+    font-family: var(--primary-font);
+    font-size: var(--size-font);
+    font-weight: var(--font-weight-700);
+    margin-left: -34vh;
+}
+
+.label-user-login{
+  margin-bottom: 1vh;
+    font-family: var(--primary-font);
+    font-size: var(--size-font);
+    font-weight: var(--font-weight-700);
+    margin-left: -35vh;
+}
+
+#label-senha { 
+    font-family: var(--primary-font);
+    font-size: var(--size-font);
+    font-weight: var(--font-weight-700);
+    margin-bottom: 1vh;
+    margin-left: -37vh;
+    
+}
+
+.input-user-login{
+    width: 100%;
+    padding: 15px 55px 15px 12px;
+    border-color: #ecececec;
+    border-width: 2px;
+    border-radius: 7px;
+
+}
+
+.usuario{
+    margin-bottom: 2vh;
+
+}
+
+.senha{
+    margin-bottom: 1vh;
+}
+
+input{
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight-600)
+
+}
+
+.input-user-login::placeholder {
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight-600)
+
+}
+
+#esqueceu-senha{
+    display: flex;
+    align-self: start;
+    margin-top: 2px;
+    margin-left: -5vh;
+    color: var(--fourth-color);
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight-500);
+    font-size: 13.5px;
+
+}
+
+#label-email-recuperacao{
+  font-family: var(--primary-font);
+  font-size: var(--size-font);
+  font-weight: var(--font-weight-700);
+  margin-bottom: 1vh;
+
+}
+
+.input-user-login{
+  font-family: var(--primary-font);
+  font-size: var(--size-font);
+  font-weight: var(--font-weight-700);
+  margin-bottom: 1vh;
+
+}
+
+#label-username{
+  font-family: var(--primary-font);
+  font-size: var(--size-font);
+  font-weight: var(--font-weight-700);
+  margin-left: -23vh;
+  margin-bottom: 1vh;
+
+}
+
+.label-form-cadastro{
+  font-family: var(--primary-font);
+  font-size: var(--size-font);
+  font-weight: var(--font-weight-700);
+  margin-left: -35vh;
+  margin-bottom: 1vh;
+}
+
+/* Css Somente da personalização do botão e o hover */
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight-500);
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.btn-3 {
+    background: rgb(0,172,238);
+    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    width: 165px;
+    height: 45px;
+    margin-top: 3vh;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+     color: #223d8f;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: rgba(2,126,251,1);
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+
+/* Final da estilização */
