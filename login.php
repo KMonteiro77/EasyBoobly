@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     // print_r('<br>');
     // print_r("senha: " . $_POST['password-cadastro']);
 
-    include_once("valid-login.php");
+    include_once("config-bd/valid-login.php");
 
     $name = $_POST['username-cadastro'];
     $senha = $_POST['password-cadastro'];
@@ -24,11 +24,11 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/icon.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/form-login.css">
+    <script src="js/form-login.js" defer></script>
     <title>EasyBoobly</title>
 </head>
-<body id="body-login">
+<body id="body">
     <div class="container">
         <div class="container-form">
             <div class="form">
@@ -49,7 +49,7 @@ if(isset($_POST['submit'])){
                     <section id="section-form">
 
                         <!-- Formulário de Login -->
-                        <form id="form-login" class="formulario ativo" method="POST" action="teste-login.php" >
+                        <form id="form-login" class="formulario ativo" method="POST" action="config-bd/teste-login.php" >
                             <div id="item-forms">
                                 <div id="text-form"> 
                                     <label for="user" id="label-user">Usuário</label>

@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnEntrar = document.getElementById('btn-entrar');
     const btnCadastrar = document.getElementById('btn-cadastrar');
     const esqueceuSenha = document.getElementById('esqueceu-senha');
-    
-    const botaoTeste = document.getElementById('adicionar-classe');
 
     // Alterna entre formularios ao clicar nos botões
     btnEntrar.addEventListener('click', function(event) {
@@ -29,11 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         formRecuperacao.classList.add('ativo');
         formLogin.classList.remove('ativo');
         formCadastro.classList.remove('ativo');
-    });
-
-    // Exemplo de botão para adicionar uma classe
-    botaoTeste.addEventListener('click', function() {
-        formCadastro.classList.toggle('ativo');
     });
 });
 

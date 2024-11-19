@@ -31,17 +31,8 @@
 
 }
 
-/* body{
+body{
     display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background: rgb(15,45,138);
-    background: linear-gradient(180deg, rgba(15,45,138,1) 0%, rgba(35,92,217,1) 56%);
-} */
-
-#body-login{
-  display: flex;
     min-height: 100vh;
     align-items: center;
     justify-content: center;

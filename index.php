@@ -18,6 +18,6 @@
 </head>
 <body>
     <h1>HOME EM CONTRUÇÃO!</h1>
-    <a href="sair.php">Sair</a>
+    <a href="config-bd/sair.php">Sair</a>
 </body>
 </html>

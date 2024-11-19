@@ -26,7 +26,8 @@ if(isset($_POST['submit']) && !empty($_POST['user-login']) && !empty($_POST['pas
     } else{
         $_SESSION['user'] = $user;
         $_SESSION['senha'] = $senha;
-        header('Location: system.php');
+        header('Location: http://localhost/easyboobly/system.php');
+        exit();
     }
 
 } else {
