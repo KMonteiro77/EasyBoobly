@@ -21,12 +21,12 @@
 }
 
 /* Esconde o menu por padrão */
-.formulario {
+.user-logo{
     display: none;
 }
 
 /* Mostra o menu ativo */
-.formulario.ativo {
+.user-logo .ativo {
     display: block;
 }
 

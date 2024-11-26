@@ -28,14 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
         formLogin.classList.remove('ativo');
         formCadastro.classList.remove('ativo');
     });
-<<<<<<<<< Temporary merge branch 1
 
     // Exemplo de botão para adicionar uma classe
     botaoTeste.addEventListener('click', function() {
         formCadastro.classList.toggle('ativo');
     });
-=========
->>>>>>>>> Temporary merge branch 2
 });
 
 // Validação básica do formulário de cadastro
@@ -55,8 +52,6 @@ document.querySelector("form").addEventListener("submit", function(event) {
         event.preventDefault();
     }
 });
-<<<<<<<<< Temporary merge branch 1
-=========
 
 // Função de campos requeridos
 
@@ -71,4 +66,3 @@ function VerificaRequeridos(event){
     }
 
 }
->>>>>>>>> Temporary merge branch 2
