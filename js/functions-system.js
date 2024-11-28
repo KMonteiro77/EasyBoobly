@@ -1,16 +1,8 @@
-const menu = document.querySelector('.logo-user')
-
-// menuOptinsUser.addEventListener('click', function(event) {
-//     event.preventDefault();
-//     container-menu-opcoes.classList.add('ativo');
-//     container-menu-opcoes.classList.remove('ativo');
-// });
-
-        // Seleciona a div com a classe "minha-div"
-        const div = document.querySelector('.minha-div');
-
-        // Adiciona um evento de clique
-        div.addEventListener('click', function() {
-            // Exibe uma mensagem no console quando a div for clicada
-            console.log('A div foi clicada!');
-        });
+function displayMenu(){
+    var dispayPerfilUser = document.querySelector(".menu-user-opcoes");
+    if(dispayPerfilUser.style.display === "none") {
+        dispayPerfilUser.style.display = "block"
+    } else {
+        dispayPerfilUser.style.display = "none"
+    }
+} // Faz o menu de opções do user aparecer e sumir // tem uma class no css que diz o primeiro display do menu
